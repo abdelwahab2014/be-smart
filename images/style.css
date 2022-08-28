@@ -1,0 +1,196 @@
+/* scroll control -pages*/
+.home{height: 800px; padding-top: 50px;}
+.lambs{height: 900px; padding-top: 60px;}
+.cam{height: 500px;}
+.keys{height: 1200px;  padding-top: 60px;}
+
+
+  
+/*navbar*/ 
+.aligncart{margin-left:auto;}
+.navbar .navbar-collapse {margin-left: 500px;}
+  @media (max-width: 700px) {
+    .navbar .navbar-collapse {
+        text-align: center;
+        margin-left:0px;
+      }
+
+    
+  }
+
+  @media (max-width: 1000px) {
+    .navbar .navbar-collapse {
+        text-align: center;
+        margin-left:0px;
+      }
+      .lambs{height: 1700px;}
+      .keys{height: 1700px;}
+      .cam{height: 900px;}
+  }
+  @media (max-width: 900px) {
+    .navbar .navbar-collapse {
+        text-align: center;
+        margin-left:0px;
+      
+      }
+      
+      .lambs{height: 1700px;}
+      .keys{height: 1700px;}
+      .cam{height: 900px;}
+      
+  }
+
+  @media (max-width: 800px) {
+    .lambs{height: 1700px;}
+    .keys{height: 1700px;}
+    .cam{height: 900px;}
+    
+    
+  }
+
+.nav-link {
+    color: black !important;
+    font-weight: 500;
+    
+    }
+
+
+
+  /*footer*/
+  .footer-icons{list-style: none; display: inline-block; text-align: center; }
+  li{float: left;}
+
+  /*slideshow*/
+  .w-100{width: 100%; object-fit: cover;}
+ 
+  .carousel-item{height: calc(100vh - 50px);}
+  .w-100{height: 100%;}
+
+
+  @media (max-width: 950px) {
+    .w-100 {
+        height: 100%;
+      }
+      .carousel-control-next, .carousel-control-prev{height: 80%;}
+      .home{height: 700px;}
+    
+      
+  }
+  @media (max-width: 700px) {
+    .w-100 {
+        height: 60%;
+      }
+      .carousel-control-next, .carousel-control-prev{height: 50%;}
+      .carousel-indicators{height: 45%;}
+      
+      .home{height: 450px;background-color: blue;}
+
+      
+    
+  }
+
+  @media (max-width: 500px) {
+    .w-100 {
+        height: 50%;
+      }
+      .home{height: 400px;background-color: orange}
+      .ml-auto{background-color: rgb(0, 255, 34);}
+    
+  }
+
+
+
+
+/*important note */
+.product{width: 100%; object-fit: cover; height: 300px; margin: 4px;}
+.btn-primary{background-color: blue;}
+
+
+
+/*reveal*/
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left .5s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+/*
+
+.d-block, .w-100 {
+  width:100%;
+  height:550px;
+  object-fit:cover;
+  object-position:50% 50%;
+ }*/
+
+
+ .ml-auto{background-color: red;}
+
+ @media (max-width: 1000px) {
+    .ml-auto{background-color: rgb(0, 255, 34);
+    width: 20%;
+    align-items: center;
+    text-align: center;
+    margin-right: 280px;
+    
+    } 
+}
+
+@media (max-width: 800px) {
+  .ml-auto{background-color: rgb(251, 255, 0);
+  width: 20%;
+  align-items: center;
+
+  margin-right: 220px;
+  
+  } 
+}
+
+
+
