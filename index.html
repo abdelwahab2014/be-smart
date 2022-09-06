@@ -106,7 +106,7 @@
   <div class="col-6 col-sm-6 col-md-6 col-lg-3 reveal fade-bottom">
     <img class="product" src="{{SRC}}"
     id="img1" data-toggle="modal" data-target="#exampleModal" onclick="showImageModal('{{SRC}}', '{{NAME}}')">
-    <div class="caption text-center"><p id="catption1">{{NAME}}</p>
+    <div class="caption text-center"><p id="catption">{{NAME}}</p>
     <i  class="btn btn-outline-primary bi bi-cart-plus" role="button" aria-pressed="true" onclick="cartbutton()"></i></div>
   </div>
   `;
@@ -115,14 +115,14 @@
       id: 'ITEM_1',
       image: 'images/lamp2.jpg',
       name:'Item one',
-      shortDescription: 'some description as caption',
-      description: 'some long data '
+      shortDescription: 'some description as k---f',
+      description: 'test '
     },
     {
       id: 'ITEM_2',
       image: 'images/lamp.jpg',
       name:'Item TWO',
-      shortDescription: 'some description as caption',
+      shortDescription: 'some description vvvvvvvvvs',
       description: 'some long data '
     },
 
@@ -176,7 +176,7 @@
   for(let p of products){
     let pTemplate = template.replace('{{SRC}}', p.image);
     pTemplate = pTemplate.replace('{{SRC}}', p.image);
-    pTemplate = pTemplate.replace('{{NAME}}', p.name);
+    pTemplate = pTemplate.replace('{{NAME}}', p.name+"\t "+p.shortDescription);
     pTemplate = pTemplate.replace('{{NAME}}', p.name);
     document.getElementById('PRODUCTS_VIEW').innerHTML += pTemplate;
   }
@@ -195,7 +195,7 @@
       </div>
       <div class="modal-body">
         <div><img class="product" id="img_model">
-          <div class="caption text-center">item <i class="btn btn-outline-primary bi bi-cart-plus" role="button"
+          <div class="caption text-center"><i class="btn btn-outline-primary bi bi-cart-plus" role="button"
             onclick="cartbutton()" aria-pressed="true"></i></div>
           <p id ="img_caption_model"></p>
         </div>

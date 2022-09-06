@@ -83,7 +83,7 @@
       .carousel-control-next, .carousel-control-prev{height: 50%;}
       .carousel-indicators{height: 45%;}
       
-      .home{height: 450px;background-color: blue;}
+      .home{height: 420px;}
 
       
     
@@ -93,7 +93,8 @@
     .w-100 {
         height: 50%;
       }
-      .home{height: 400px;background-color: orange}
+      .home{height: 350px;}
+      
       .ml-auto{background-color: rgb(0, 255, 34);}
     
   }
@@ -169,7 +170,7 @@
  }*/
 
 
- .ml-auto{background-color: red;}
+ .ml-auto{background-color: white;}
 
  @media (max-width: 1000px) {
     .ml-auto{background-color: rgb(0, 255, 34);
